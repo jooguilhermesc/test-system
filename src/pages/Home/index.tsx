@@ -26,9 +26,11 @@ const Home: React.FC = () => {
       <div className="multas-container">
         <iframe
           title="dashboard-multas"
+          className="multas-iframe"
           width="600"
           height="373.5"
           src="https://app.powerbi.com/view?r=eyJrIjoiYTlkODUxMWYtNzBiOS00ODQxLTkyNjYtYTE3MTU3Nzk4MWRhIiwidCI6IjQyYzRmMGNkLWJiM2EtNDVmYy05MzZiLWU3NzRhNDU1NDQ5OCJ9"
+          allowFullScreen={true}
         ></iframe>
       </div>
     </>

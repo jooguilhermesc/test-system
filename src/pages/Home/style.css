@@ -56,3 +56,12 @@ body {
   background-color: #147cc2;
   color: #e2eef5;
 }
+
+.multas-container {
+  width: 100vw;
+}
+
+.multas-iframe {
+  width: 100vw;
+  height: 85vh;
+}
