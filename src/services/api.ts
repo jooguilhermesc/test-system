@@ -14,10 +14,10 @@ export function post(text: string, user: object): Promise<Response> {
       resolve({
         data: {
           token:
-            '91j893h281h9nf98fnf2309jd09jkkd0as98238j9fr8j98f9j8f298r829r-f',
+            "91j893h281h9nf98fnf2309jd09jkkd0as98238j9fr8j98f9j8f298r829r-f",
           user: {
-            name: 'Rafael',
-            email: 'rafaelcodomingues@gmail.com',
+            name: "admin",
+            email: "sistema1234",
           },
         },
       });
@@ -27,6 +27,6 @@ export function post(text: string, user: object): Promise<Response> {
 
 export const defaults = {
   headers: {
-    Authorization: '',
+    Authorization: "",
   },
 };

@@ -1,5 +1,6 @@
-import React from 'react';
-import { useAuth } from '../../contexts/auth';
+import React from "react";
+import { useAuth } from "../../contexts/auth";
+import "./style.css";
 
 // import { Container } from './styles';
 
@@ -10,15 +11,30 @@ const Login: React.FC = () => {
 
   async function handleLogin() {
     await Login({
-      email: 'rafaelcodomingues@gmail.com',
-      password: '123456',
+      email: "admin",
+      password: "sistema1234",
     });
   }
 
   return (
-    <div>
-      <button onClick={handleLogin}>Login</button>
-    </div>
+    <>
+      <div className="login-container">
+        <h1>Sistema de análise de KPIs</h1>
+        <form className="login-form">
+          <div className="login-labels">
+            <label htmlFor="">Usuário </label>
+            <input type="text" />
+          </div>
+          <div className="login-labels">
+            <label htmlFor="">Senha </label>
+            <input type="password" name="" id="" />
+          </div>
+        </form>
+        <button className="login-btn" onClick={handleLogin}>
+          Login
+        </button>
+      </div>
+    </>
   );
 };
 
