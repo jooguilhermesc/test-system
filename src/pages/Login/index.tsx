@@ -1,6 +1,7 @@
 import React from "react";
 import { useAuth } from "../../contexts/auth";
 import "./style.css";
+import logoAspectus from "../../img/logo.png";
 
 // import { Container } from './styles';
 
@@ -20,6 +21,7 @@ const Login: React.FC = () => {
     <>
       <div className="login-container">
         <h1>Sistema de análise de KPIs</h1>
+        <img src={logoAspectus} alt="Logo Aspectus Consultoria" />
         <form className="login-form">
           <div className="login-labels">
             <label htmlFor="">Usuário </label>
